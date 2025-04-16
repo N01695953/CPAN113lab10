@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>API Calls Lab</title>
+</head>
+<body>
+    <h1>API Interaction Lab</h1>
+    
+    <button id="fetchFetch">Fetch Data with fetch()</button>
+    <button id="fetchXHR">Fetch Data with XHR</button>
+    
+    <div id="result"></div>
+    
+    <form id="postForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required>
+        <textarea id="postBody" placeholder="Post Body" required></textarea>
+        <button type="submit">Create Post</button>
+    </form>
+    
+    <form id="putForm">
+        <input type="number" id="postId" placeholder="Post ID" required>
+        <input type="text" id="updateTitle" placeholder="New Title" required>
+        <textarea id="updateBody" placeholder="New Body" required></textarea>
+        <button type="submit">Update Post</button>
+    </form>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
